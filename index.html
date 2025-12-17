@@ -329,6 +329,274 @@
             page-break-after: avoid;
             break-after: avoid;
         }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 25px;
+                border-radius: 6px;
+            }
+
+            header {
+                margin-bottom: 25px;
+                padding-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+                margin-bottom: 8px;
+            }
+
+            .subtitle {
+                font-size: 0.95em;
+            }
+
+            h2 {
+                font-size: 1.4em;
+                margin-top: 25px;
+                margin-bottom: 15px;
+                padding-bottom: 8px;
+            }
+
+            h3 {
+                font-size: 1.1em;
+                margin-top: 18px;
+                margin-bottom: 12px;
+            }
+
+            h4 {
+                font-size: 1em;
+                margin-top: 12px;
+                margin-bottom: 8px;
+            }
+
+            .section {
+                margin-bottom: 20px;
+                padding: 15px;
+                border-left: 3px solid #008B94;
+            }
+
+            p {
+                margin-bottom: 12px;
+                font-size: 0.95em;
+            }
+
+            table {
+                margin: 15px 0;
+                font-size: 0.9em;
+            }
+
+            th,
+            td {
+                padding: 10px;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                margin: 15px 0;
+            }
+
+            .feature-item {
+                padding: 12px;
+            }
+
+            ul,
+            ol {
+                margin-left: 20px;
+                margin-bottom: 12px;
+            }
+
+            li {
+                margin-bottom: 8px;
+                font-size: 0.95em;
+            }
+
+            code {
+                padding: 2px 4px;
+                font-size: 0.85em;
+            }
+
+            .code-block {
+                padding: 15px;
+                margin: 15px 0;
+                font-size: 0.85em;
+            }
+
+            .code-block pre {
+                font-size: 0.85em;
+                line-height: 1.4;
+            }
+
+            .info,
+            .warning,
+            .success {
+                padding: 12px;
+                margin: 12px 0;
+                border-left: 3px solid;
+            }
+
+            .step {
+                margin: 12px 0;
+                padding-left: 20px;
+            }
+
+            .step::before {
+                left: -10px;
+                font-size: 1em;
+            }
+
+            .scenario {
+                padding: 15px;
+                margin: 15px 0;
+            }
+
+            .scenario-title {
+                margin-bottom: 12px;
+            }
+
+            .scenario-step {
+                margin: 8px 0;
+                padding: 6px 10px;
+                font-size: 0.9em;
+            }
+
+            footer {
+                margin-top: 30px;
+                padding-top: 15px;
+                font-size: 0.85em;
+            }
+
+            .print-hint {
+                padding: 12px;
+                margin-bottom: 20px;
+                font-size: 0.9em;
+            }
+
+            .content-divider {
+                margin: 25px 0;
+            }
+
+            /* Optimize images for mobile */
+            img {
+                max-width: 100%;
+                height: auto;
+                margin: 8px 0 !important;
+            }
+
+            /* Table responsiveness */
+            table {
+                display: block;
+                width: 100%;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            thead {
+                display: none;
+            }
+
+            tr {
+                display: block;
+                margin-bottom: 15px;
+                background-color: #28323a;
+                border-radius: 4px;
+                padding: 10px;
+                border: 1px solid #41505E;
+            }
+
+            td {
+                display: block;
+                text-align: left;
+                padding: 8px 0;
+                border-bottom: none !important;
+            }
+
+            td::before {
+                content: attr(data-label);
+                font-weight: 600;
+                color: #70e1e8;
+                display: block;
+                margin-bottom: 5px;
+                font-size: 0.9em;
+            }
+
+            td:first-child::before {
+                margin-bottom: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+                margin-top: 20px;
+            }
+
+            h3 {
+                font-size: 1em;
+            }
+
+            .section {
+                padding: 12px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            code {
+                font-size: 0.8em;
+            }
+
+            .code-block {
+                padding: 12px;
+                margin: 12px 0;
+                font-size: 0.75em;
+            }
+
+            .emoji {
+                font-size: 1em;
+                margin-right: 3px;
+            }
+
+            .highlight {
+                padding: 2px 6px;
+            }
+
+            .feature-item strong {
+                font-size: 0.95em;
+            }
+
+            .info,
+            .warning,
+            .success {
+                padding: 10px;
+                margin: 10px 0;
+            }
+
+            li {
+                font-size: 0.9em;
+                margin-bottom: 6px;
+            }
+        }
     </style>
 </head>
 
